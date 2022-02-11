@@ -6,7 +6,7 @@ main {
 }
 
 article {
-    height: 700px;
+    height: auto;
     width: 500px;
     box-shadow: 5px 0px 10px black;
     display: grid;
