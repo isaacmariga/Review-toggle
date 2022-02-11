@@ -33,9 +33,15 @@ counter = 1
 
 
 
-window.addEventListener("DOMContentLoaded", event => {
-    img.src = content[2].img
-    fname.innerText = content[2].name
-    job.innerText = content[2].job
-    review.innerText = content[2].review
-})
+
+
+let cont = (count) => {
+    count = counter
+
+    img.src = content[count].img
+    fname.innerText = content[count].name
+    job.innerText = content[count].job
+    review.innerText = content[count].review
+}
+
+window.addEventListener("DOMContentLoaded", cont)
