@@ -32,9 +32,6 @@ let random = document.getElementById("random")
 counter = 1
 
 
-
-
-
 let cont = (count) => {
     count = counter
 
@@ -45,3 +42,20 @@ let cont = (count) => {
 }
 
 window.addEventListener("DOMContentLoaded", cont)
+
+
+right.addEventListener("click", event => {
+    cont(counter++)
+    if (counter >= box.length) {
+        counter = 0
+    }
+})
+left.addEventListener("click", event => {
+    cont(counter--)
+    if (counter < 0) {
+        counter = box.length - 1
+    }
+})
+random.addEventListener("click", event => {
+    counter = (Math.floor(Math.random() * box.length))
+})
