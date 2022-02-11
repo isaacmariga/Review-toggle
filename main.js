@@ -57,5 +57,6 @@ left.addEventListener("click", event => {
     }
 })
 random.addEventListener("click", event => {
-    counter = (Math.floor(Math.random() * box.length))
+    counter = (Math.floor(Math.random() * content.length))
+    cont(counter)
 })
